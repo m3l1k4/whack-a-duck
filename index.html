@@ -8,24 +8,33 @@
     <meta title="author" content="Melika">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/whack.css">
+   
 </head>
+
+<style>
+    body{
+        background-color: black;
+    }
+    #whack{
+        position: relative;
+        background-color: black;
+        width: 800px;
+        height: 800px;
+    }
+    
+    #mole{ width: 30px; height:30px;
+   position: relative;
+ 
+    }
+</style>
 
 
 <body>
-    <header class="header">
-   </header>
 
-
-
-    <main>
-
-    </main>
-
-    <footer class="footer">
-    </footer>
-
-
+    <h1 id="score"></h1>
+    <div id="whack">
+        <button type="button" id="mole"></button>
+    </div>
 
 </body>
 <script src="index.js"></script>
