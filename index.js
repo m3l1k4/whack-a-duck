@@ -2,7 +2,7 @@
 //erase element on click detection
 //generate new coordinates
 //create new element
-
+var score=0;
 
 setInterval(startWhack, 1000)
 
