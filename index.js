@@ -5,8 +5,6 @@ setInterval(startWhack, 1000)
 
 document.getElementById('mole').addEventListener("click", function (event) {
     event.preventDefault();
-
-
     score = score + 1;
     document.getElementById('score').innerHTML = score;
 
@@ -16,9 +14,9 @@ document.getElementById('mole').addEventListener("click", function (event) {
 
 function startWhack() {
 
-    let xCordf = getRandomX(20, 600);
+    let xCordf = getRandomX(20, 1200);
     let xCord = float2int(xCordf);
-    let yCordf = getRandomY(10, 600);
+    let yCordf = getRandomY(10, 500);
     let yCord = float2int(yCordf);
     let diditWork = whackedMole(xCord, yCord);
 
