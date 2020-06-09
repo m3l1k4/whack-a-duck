@@ -1,3 +1,5 @@
+var quack = new Audio("./assets/quack.mp3")
+
 var score = 0;
 
 setInterval(startWhack, 1000)
@@ -7,7 +9,7 @@ document.getElementById('mole').addEventListener("click", function (event) {
     event.preventDefault();
     score = score + 1;
     document.getElementById('score').innerHTML = score;
-
+    quack.play();
 
 });
 
