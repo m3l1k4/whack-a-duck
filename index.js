@@ -1,34 +1,29 @@
-//create element
-//erase element on click detection
-//generate new coordinates
-//create new element
-var score=0;
+var score = 0;
 
 setInterval(startWhack, 1000)
 
 
-document.getElementById('mole').addEventListener("click", function(event){
-event.preventDefault();
-console.log("whacked");
+document.getElementById('mole').addEventListener("click", function (event) {
+    event.preventDefault();
+
+
+    score = score + 1;
+    document.getElementById('score').innerHTML = score;
+
 
 });
 
 
-function startWhack(){
+function startWhack() {
 
     let xCordf = getRandomX(20, 600);
-    console.log(xCordf);
     let xCord = float2int(xCordf);
-    console.log(xCord);
     let yCordf = getRandomY(10, 600);
     let yCord = float2int(yCordf);
-    
-    console.log(yCord);
-    
-    let diditWork=whackedMole(xCord, yCord);
-    console.log(diditWork);
+    let diditWork = whackedMole(xCord, yCord);
 
-return
+
+    return
 
 }
 
