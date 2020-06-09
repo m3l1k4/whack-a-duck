@@ -2,7 +2,7 @@ var quack = new Audio("./assets/quack.mp3")
 
 var score = 0;
 
-setInterval(startWhack, 1000)
+setInterval(startWhack, 800)
 
 
 document.getElementById('mole').addEventListener("click", function (event) {
